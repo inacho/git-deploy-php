@@ -1,6 +1,10 @@
 # Git Deploy PHP
 
-Sync the files of a Git repository with the Web server
+Sync the files of a Git repository with the Web server according to the following rules:
+
+* All files in the branch being deployed will be copied to the deployment directory
+* Files that were deleted in the Git repo since the last deployment will be deleted from the deployment directory
+* Untracked files in the deploy directory will be left alone
 
 ## Installation
 
